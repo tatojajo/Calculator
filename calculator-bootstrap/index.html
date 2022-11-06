@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--style-->
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <!--title-->
+    <title>calculator</title>
+</head>
+<body>  
+    <!--calculator-->
+    <div class="calculator container">
+        <div class="calculator-card">
+            <!--display-->
+            <input type="text" id="display" value="">
+            <!--calculator buttons-->
+            <div id="calculator-buttons">
+                <!--operadors-->
+                <button type="button" class=" btn btn-outline-danger" id="operator" value="+" onclick="btn('+')">+</button>
+                <button type="button" class="btn btn-outline-danger" id="operator" value="-" onclick="btn('-')">-</button>
+                <button type="button" class="btn btn-outline-danger" id="operator" value="*" onclick="btn('*')">*</button>
+                <button type="button" class="btn btn-outline-danger" id="operator" value="/" onclick="btn('/')">/</button>
+                <!--numbers-->
+                <button type="button" class="btn btn-light" value="7" onclick="btn('7')">7</button>
+                <button type="button" class="btn btn-light" value="8" onclick="btn('8')">8</button>
+                <button type="button" class="btn btn-light" value="9" onclick="btn('9')">9</button>
+                <button type="button" class="btn btn-light" value="4" onclick="btn('4')">4</button>
+                <button type="button" class="btn btn-light" value="5" onclick="btn('5')">5</button>
+                <button type="button" class="btn btn-light" value="6" onclick="btn('6')">6</button>
+                <button type="button" class="btn btn-light" value="1" onclick="btn('1')">1</button>
+                <button type="button" class="btn btn-light" value="2" onclick="btn('2')">2</button>
+                <button type="button" class="btn btn-light" value="3" onclick="btn('3')">3</button>
+                <button type="button" class="btn btn-light" id="decimal" value="." onclick="btn('.')">.</button>
+                <button type="button" class="btn btn-light" value="0" onclick="btn('0')">0</button>
+                <button type="button" class="btn btn-warning" id="all_clear" value="all_clear" onclick="AC()">AC</button>
+                <button type="button" class="btn btn-success" id="equal" value="=" onclick="equal()">=</button>
+            </div>
+        </div>
+    </div>
+    <!--javascript-->
+    <script src="javascript/main.js"></script>
+</body>
+</html>

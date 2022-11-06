@@ -1,0 +1,28 @@
+.calculator-card {
+    border: 10px solid #339399;
+    border-radius: 5px;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+#display{
+    max-width: 100%;
+    max-height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+    font-size: 4rem;
+}
+#calculator-buttons{
+    display: grid;
+    grid-template-columns: repeat(4);
+    grid-gap: 20px;
+    padding: 20px;
+}
+#equal{
+    max-height: 100%;
+    grid-area: 2 / 4 / 6 / 5;
+}
